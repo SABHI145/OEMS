@@ -3,7 +3,7 @@ OEMS (On-demand Electronic Mobility Service) is a comprehensive ride-hailing pla
 
 to run this file first open this path in terminal then run 
 
-" npm intall "
+" npm install "
 
 if any vulnerability or issues then "npm build" or "npm build --force"
 
