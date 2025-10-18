@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Car, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
@@ -6,10 +7,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
+            <Link to="/" className="flex items-center space-x-2 mb-4">
               <Car className="h-8 w-8 text-deep-teal" />
               <span className="text-2xl font-bold text-charcoal">OEMS</span>
-            </div>
+            </Link>
             <p className="text-charcoal opacity-70">
               Your trusted partner for smart and fast transportation
             </p>
@@ -19,19 +20,19 @@ export default function Footer() {
             <h3 className="font-semibold text-charcoal mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
+                <Link to="/about" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#careers" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
+                <Link to="/careers" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#press" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
+                <Link to="/press" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
                   Press
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -40,19 +41,19 @@ export default function Footer() {
             <h3 className="font-semibold text-charcoal mb-4">Support</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#help" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
+                <Link to="/support" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
                   Help Center
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#safety" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
+                <Link to="/safety" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
                   Safety
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
+                <Link to="/contact" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -61,19 +62,19 @@ export default function Footer() {
             <h3 className="font-semibold text-charcoal mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#terms" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
+                <Link to="/legal/terms" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#privacy" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
+                <Link to="/legal/privacy" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#cookies" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
+                <Link to="/legal/cookies" className="text-charcoal opacity-70 hover:text-deep-teal transition-colors">
                   Cookie Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

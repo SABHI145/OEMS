@@ -3,22 +3,22 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Aditya',
+    name: 'Rina Patel',
     text: 'This ride-sharing app is fantastic! I always get picked up on time.',
     rating: 5,
-    avatar: 'https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1',
+    avatar: 'https://images.pexels.com/photos/2747267/pexels-photo-2747267.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1',
   },
   {
-    name: 'Rahul',
+    name: 'Nikhil Sharma',
     text: 'Professional drivers and clean cars. OEMS has become my go-to transportation service.',
     rating: 5,
-    avatar: 'https://images.pexels.com/photos/6698557/pexels-photo-6698557.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1',
+    avatar: 'https://images.pexels.com/photos/938639/pexels-photo-938639.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1',
   },
   {
-    name: 'Sneha',
+    name: 'Rahul Verma',
     text: 'Safe, reliable, and affordable. The real-time tracking feature gives me peace of mind.',
     rating: 5,
-    avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1',
+    avatar: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1',
   },
 ];
 

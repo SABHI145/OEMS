@@ -108,7 +108,7 @@ export default function Business() {
                     <span className="text-4xl font-bold text-deep-teal">{plan.price}</span>
                   ) : (
                     <div className="flex items-baseline">
-                      <span className="text-4xl font-bold text-deep-teal">${plan.price}</span>
+                      <span className="text-4xl font-bold text-deep-teal">₹{plan.price}</span>
                       <span className="text-charcoal opacity-60 ml-2">/month</span>
                     </div>
                   )}
@@ -197,7 +197,7 @@ export default function Business() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-deep-teal focus:outline-none transition-colors bg-white"
-                  placeholder="(555) 123-4567"
+                  placeholder="(+91) 12345-67890"
                 />
               </div>
             </div>

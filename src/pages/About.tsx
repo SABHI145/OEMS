@@ -1,4 +1,5 @@
 import { Target, Heart, Zap, Users } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
 
 const mission = {
   icon: Target,
@@ -21,10 +22,10 @@ const story = [
 ];
 
 const leadership = [
-  { name: 'Sarah Chen', role: 'CEO & Co-Founder', image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1' },
-  { name: 'Michael Rodriguez', role: 'CTO & Co-Founder', image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1' },
-  { name: 'Emily Thompson', role: 'Chief Safety Officer', image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1' },
-  { name: 'David Park', role: 'VP of Operations', image: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1' },
+  { name: 'Nikita', role: 'CEO & Co-Founder', image: 'https://images.pexels.com/photos/2747267/pexels-photo-2747267.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1' },
+  { name: 'Rohan', role: 'CTO & Co-Founder', image: 'https://images.pexels.com/photos/938639/pexels-photo-938639.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1' },
+  { name: 'Emily', role: 'Chief Safety Officer', image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1' },
+  { name: 'Ansh', role: 'VP of Operations', image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1' },
 ];
 
 export default function About() {
@@ -151,9 +152,16 @@ export default function About() {
           <p className="text-xl text-charcoal opacity-80 mb-10 max-w-2xl mx-auto">
             We're always looking for talented individuals who share our passion for innovation and community.
           </p>
-          <button className="px-8 py-4 bg-deep-teal text-white rounded-xl font-semibold text-lg transition-all hover:shadow-mint hover:scale-105">
-            View Career Opportunities
-          </button>
+          const navigate = useNavigate();
+
+          return (
+            <button
+              onClick={() => navigate("/careers")}
+              className="px-8 py-4 bg-deep-teal text-white rounded-xl font-semibold text-lg transition-all hover:shadow-mint hover:scale-105"
+            >
+              View Career Opportunities
+            </button>
+           );
         </div>
       </section>
     </div>
